@@ -1,0 +1,8 @@
+birds
+cat
+daisy
+dandelion
+dog
+roses
+sunflowers
+tulips

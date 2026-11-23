@@ -1,0 +1,20 @@
+# Virtual environment
+venv/
+
+# Model files (too large for GitHub)
+*.keras
+*.h5
+
+# Dataset (too large for GitHub)
+dataset/
+
+# Testing images
+testing images/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
