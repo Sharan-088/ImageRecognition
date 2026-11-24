@@ -38,14 +38,65 @@ dataset/
 python train.py
 ```
 
-### Predict an image
+### Predict an image (Command Line)
 ```bash
 python predict.py
 ```
 Enter the path to any image when prompted.
 
+### Web Interface (Recommended)
+
+The project now includes a modern web interface for easy image classification!
+
+**Step 1: Install Flask dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+**Step 2: Start the Flask server**
+```bash
+python app.py
+```
+
+**Step 3: Open your browser**
+Navigate to: **http://localhost:5000**
+
+**Features:**
+- 📤 Drag-and-drop or browse to upload images
+- 🖼️ Live image preview before prediction
+- 📊 Visual confidence bars for all classes
+- 📝 Automatic prediction history logging
+- 📱 Mobile-responsive design
+- 🧹 Automatic cleanup of old uploads
+
+## Project Structure
+
+```
+ImageRecognition/
+├── app.py                  # Flask web application
+├── train.py               # Model training script
+├── predict.py             # Command-line prediction
+├── evaluate.py            # Model evaluation
+├── visualize.py           # Results visualization
+├── model.keras            # Trained model
+├── classes.txt            # Class names
+├── requirements.txt       # Python dependencies
+├── templates/
+│   └── index.html        # Web interface HTML
+├── static/
+│   ├── css/
+│   │   └── style.css     # Styling
+│   ├── js/
+│   │   └── script.js     # Client-side logic
+│   └── uploads/          # Temporary image storage
+├── logs/
+│   └── predictions.json  # Prediction history
+└── dataset/              # Training data
+```
+
 ## Technologies Used
 
-- Python
-- TensorFlow / Keras
-- MobileNetV2 (Transfer Learning)
+- **Backend:** Python, Flask, TensorFlow/Keras
+- **Frontend:** HTML5, CSS3, JavaScript (Vanilla)
+- **ML Model:** MobileNetV2 (Transfer Learning)
+- **Image Processing:** Pillow, NumPy

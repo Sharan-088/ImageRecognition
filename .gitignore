@@ -18,3 +18,9 @@ __pycache__/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Uploaded images
+static/uploads/*
+
+# Prediction logs
+logs/*

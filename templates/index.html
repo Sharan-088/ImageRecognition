@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Image Recognition</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h2>AI Vision</h2>
+        <span>Image Recognition System</span>
+    </nav>
+
+
+    <!-- Main Container -->
+    <main class="container">
+
+        <!-- Welcome Section -->
+        <section class="welcome">
+            <h1>AI Image Recognition</h1>
+            <p>Upload an image and let our AI model identify it.</p>
+        </section>
+
+
+        <!-- Upload Section -->
+        <section class="upload-section">
+
+            <div class="upload-box">
+
+                <div class="upload-icon">📷</div>
+
+                <h2>Upload Your Image</h2>
+
+                <p>Drag and drop your image here or browse files</p>
+
+                <input type="file" id="imageInput" accept="image/png, image/jpeg">
+
+                <label for="imageInput" class="upload-button">
+                    Choose Image
+                </label>
+
+                <p class="file-info">Supported formats: JPG, JPEG, PNG</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Image Preview Section -->
+        <section class="preview-section" id="previewSection">
+
+            <h2>Image Preview</h2>
+
+            <img src="" id="imagePreview" alt="Uploaded Image Preview">
+
+            <button id="predictButton">
+                Predict Image
+            </button>
+
+        </section>
+
+
+        <!-- Prediction Result Section -->
+        <section class="result-section" id="resultSection">
+
+            <h2>Prediction Result</h2>
+
+            <h3 id="prediction">Detected Category</h3>
+
+            <p>Confidence: <span id="confidence">0%</span></p>
+
+        </section>
+
+    </main>
+
+
+    <!-- JavaScript File -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>
